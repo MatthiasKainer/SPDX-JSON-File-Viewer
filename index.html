@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SPDX-JSON-File-Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="index.js">        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>SPDX JSON File Viewer</h1>
+        <spdx-file-input></spdx-file-input>
+    </header>
+    <div>
+        <spdx-search field="name" placeholder="Search for specific packages"><h3>Search</h3></spdx-search>
+        <spdx-filter field="licenseDeclared"><h3>Filter for specific license</h3></spdx-filter>
+    </div>
+    <div>
+        <spdx-table columns="name,versionInfo,licenseDeclared"></spdx-table>
+    </div>
+</body>
+</html>
